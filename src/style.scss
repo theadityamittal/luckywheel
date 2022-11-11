@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.website{
+    background: url('./img/background.png') no-repeat center center;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.sidebar{
+    background-color: rgb(206, 238, 203);
+
+    .header{
+        position: absolute;
+        top: 0;
+        object-fit: contain;
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 0;
+        object-fit: contain;
+    }
+}
+
+.expand-button{
+    background-color: rgb(206, 238, 203);
+
+    &:hover{
+        animation: bounceright 2s infinite;
+    }
+    
+
+    @keyframes bounceright {
+    0%, 100% {
+        transform: translateX(-2%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateX(5%);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+    }
+}
