@@ -55,6 +55,12 @@
     }
 
     .formContainer{
-        transform: scaleY(0.9);
+        transform: scale(0.9);
+
+        form{
+            #formsubmit{
+                transform: scale(0.9);
+            }
+        }
     }
 }

@@ -63,7 +63,7 @@ const Register = ({setRoute, setVisibility, fullscreen}) => {
                         <input type="checkbox" id="promotion" defaultChecked className='h-[60px] w-[25px] accent-green-800'/>
                         <label htmlFor="promotion" className='text-xs text-gray-600'>I agree to receiving recurring automated messages at the email and/or number I have provided.<br/>Consent is not a condition to purchase.</label>
                     </div>
-                    <input type="submit" className='text-xl font-bold bg-green-800 rounded-full text-white py-4 cursor-pointer transition-colors duration-300 hover:bg-white border-green-800 border-solid border-4 hover:text-green-800' value='Try your luck' />
+                    <input id='formsubmit' type="submit" className='text-xl font-bold bg-green-800 rounded-full text-white py-4 cursor-pointer transition-colors duration-300 hover:bg-white border-green-800 border-solid border-4 hover:text-green-800' value='Try your luck' />
                 </form>
                 <p className='text-xs italic text-center text-gray-600 w-full mt-2 break-normal'>*You can spin the wheel only once!<br/>*If you win, you can claim your coupon for 10 minutes only!"</p>
                 <div className='mt-5 text-md font-bold flex justify-center align-top'>
