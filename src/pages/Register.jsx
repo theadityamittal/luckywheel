@@ -42,7 +42,7 @@ const Register = ({setRoute, setVisibility, fullscreen}) => {
     <div className="register-page h-full w-full z-10 flex items-center justify-center">
         <div className={"flex flex-col sm:flex-row items-center h-full w-full relative -top-[80px] sm:top-0 sm:p-[5%] sm:pl-0 gap-4" + (fullscreen ? fullStyle[0] : "")}>
             <img src={WheelStatic} className={"h-[200px] sm:h-[300px] sm:w-[300px] relative sm:-left-[100px]" + (fullscreen ? fullStyle[1] : "")} alt="Lucky Wheel" />
-            <div className={"formContainers px-[5%] mx-5 w-full mt-[10%] sm:p-0 sm:m-0" + (fullscreen ? fullStyle[2]: "")}>
+            <div className={"formContainer px-[5%] mx-5 w-full mt-[10%] sm:p-0 sm:m-0" + (fullscreen ? fullStyle[2]: "")}>
                 <form onSubmit={handleSubmit} className='flex flex-col justify-between gap-4'>
                     <span className='text-3xl font-extrabold leading-snug'>This is how EngageBud looks like in action!</span>
                     <div className='flex gap-8 items-center h-[60px] bg-white py-2 px-4 rounded-t border-b-2 border-emerald-700 transition duration-200 hover:bg-gray-200'>
