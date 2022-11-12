@@ -52,7 +52,7 @@ const Sidebar = ({visible, setVisibility}) => {
     return(
         <div 
             id='sidebar' 
-            className={"overscroll-none sidebar fixed -left-[50vw] z-30 h-screen w-[50vw] flex flex-col items-center justify-center transition-transform duration-500" + movein}
+            className={"sidebar fixed -left-[50vw] z-30 h-screen w-[50vw] flex flex-col items-center justify-center transition-transform duration-500" + movein}
             style={fullscreen ? expandstyle : null}
         >
             <img src={header} className="header opacity-50 w-full" alt="leaves and flowers"/>
@@ -65,8 +65,8 @@ const Sidebar = ({visible, setVisibility}) => {
                     : <Reward offer={offer} setVisibility={setVisibility} fullscreen={fullscreen}/>
                 )
             }
-            <div onClick={expandSidebar} className={"expand-button flex items-center justify-end h-[60px] w-[60px] px-1 py-3 absolute -right-[30px]  cursor-pointer rounded-full" + (fullscreen ? " hidden" : "")}>
-                <img src={expand} alt="expand" className='h-[30px] animate-pulse'/>
+            <div onClick={expandSidebar} className={"expand-button z-40 flex items-center justify-end h-[60px] w-[60px] px-1 py-3 absolute -right-[30px] cursor-pointer rounded-full"}>
+                <img src={expand} alt="expand" className='h-[30px]'/>
             </div>
             <img src={footer} className="footer opacity-50 w-full" alt="leaves and flowers"/>
         </div>

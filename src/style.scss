@@ -14,7 +14,6 @@
 
 .sidebar{
     background-color: rgb(206, 238, 203);
-    overflow-y: scroll;
 
     .header{
         position: absolute;
@@ -33,17 +32,15 @@
     background-color: rgb(206, 238, 203);
 
     &:hover{
-        animation: bounceright 2s infinite;
+        animation: bounceright 1s infinite;
     }
     
-
     @keyframes bounceright {
     0%, 100% {
-        transform: translateX(-2%);
         animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
     }
     50% {
-        transform: translateX(5%);
+        transform: translateX(3%);
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
     }
     }
