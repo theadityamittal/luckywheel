@@ -34,7 +34,7 @@ const Register = ({setRoute, setVisibility, fullscreen}) => {
 
     const fullStyle = [
         " lg:h-[55%] lg:p-0 lg:static lg:justify-around lg:w-[70%] ",
-        " lg:left-0 lg:h-[450px] lg:w-[450px] lg:static ",
+        " lg:left-0 lg:h-[420px] lg:w-[420px] lg:static ",
         " lg:max-w-[450px] lg:ml-0 "
     ]
 
